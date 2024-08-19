@@ -1,0 +1,92 @@
+/* ============ Google Font ============== */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* =========== Variables CSS =========== */
+:root {
+    /* ====== Colors ======= */
+    --color-primary: #583EBC;
+    --color-dark: #171720;
+    
+    /* ====== Font ======= */
+    --big-font:32px;
+    --medium-font: 24px;
+    --semi-font: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: "Urbanist", sans-serif;
+}
+
+/* ====== Base ======== */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* ========== Header ========== */
+.navbar {
+    background: var(--color-primary);
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-item.logo .nav-link {
+    color: var(--color-dark);
+    font-weight: 900;
+    font-size: var(--medium-font);
+    background-color: #fff;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    padding: 10px;
+    display: block;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 30px;
+    /* transition: .2s; */
+}
+
+.nav-item.active-nav .nav-link,
+.nav-item:hover:not(.logo) .nav-link {
+    color: var(--color-dark);
+    background-color: #fff;
+    border-radius: 50px;
+}
