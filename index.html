@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,23 @@
 
     <!-- ============ CSS ============ -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ============ Remix Icon ============ -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
 
     <!-- ========== Header ========== -->
     <header>
         <div class="container">
             <nav class="navbar">
+                <div class="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="#" class="nav-link logo-mobile">JD</a>
                 <ul class="nav-list">
                     <li class="nav-item active-nav"><a href="#" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
@@ -26,9 +37,40 @@
             </nav>
         </div>
     </header>
-    
+
+
+    <section class="home">
+        <div class="container">
+            <div class="wrapper">
+                <div class="text">
+                    <h1 class="title">I'm <span>Jon Dawson</span>, product Designer</h1>
+                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, excepturi! Mollitia rerum
+                        adipisci sint dolores, nisi itaque distinctio ratione quisquam!</p>
+                    <button class="btn btn-2">About</button>
+                    <button class="btn">Download CV</button>
+                </div>
+                <div class="img-box">
+                    <!-- <img src="assets/images/man.png" alt=""> -->
+                    <b><i class="ri-arrow-right-up-line"></i></b>
+                </div>
+                <div class="socialMedia-icon">
+                    <span class="social-text">Follow me on :</span>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-behance-fill"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ScrollReveal ======= -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- ============ JS ============ -->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
